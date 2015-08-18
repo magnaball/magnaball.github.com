@@ -2,9 +2,9 @@ import time, datetime
 import pandas as pd
 import numpy as np
 
-pause = 3000 #alittle less than every hour
+pause = 1800 # every half hour
 
-for i in range(1,24): 
+for i in range(1,48): 
 	data = 'https://docs.google.com/spreadsheets/d/18XyBksNbhgcYfyrNneUCZPINJE1oFjsZ0QnJDCFUd6c/export?format=csv&id=18XyBksNbhgcYfyrNneUCZPINJE1oFjsZ0QnJDCFUd6c&gid=711839241'
 	
 	df = pd.read_csv(data)
