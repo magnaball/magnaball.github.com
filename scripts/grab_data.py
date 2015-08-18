@@ -48,7 +48,9 @@ categories: magnaball
 
 	y = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
-	theText = headerInfo +'\n'+ '\n' + 'The number of tickets people want is: <strong>' + x + '</strong>' + '\n' + '\n' + 'Ticket count may not updated as frequently as map. Updated as of '+y
+	z = int(x) * 250
+
+	theText = headerInfo +'\n'+ '\n' + 'The number of tickets people want is: <strong>' + x + '</strong>' + '\n' + '\n' + 'Ticket count may not updated as frequently as map. Updated as of '+y+ '\n' + '\n' +'That would be <strong>$' + str(z) + '</strong> in tickets.'
 	text_file.write(theText)
 	text_file.close()
 
