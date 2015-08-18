@@ -50,7 +50,7 @@ categories: magnaball
 
 	z = int(x) * 225
 
-	theText = headerInfo +'\n'+ '\n' + 'The number of tickets people want is: <strong>' + x + '</strong>' + '\n' + '\n' + 'Ticket count may not updated as frequently as map. Updated as of '+y+ '\n' + '\n' +'At $225 a ticket, that would be <strong>$' + str(z) + '</strong> in GA tickets.'
+	theText = headerInfo +'\n'+ '\n' + 'The number of tickets people want is: <strong>' + x + '</strong>' + '\n' + '\n' + 'Ticket count may not updated as frequently as map. Updated as of '+y+ ' EST.' + '\n' + '\n' +'At $225 a ticket, that would be <strong>$' + str(z) + '</strong> in GA tickets.'
 	text_file.write(theText)
 	text_file.close()
 
