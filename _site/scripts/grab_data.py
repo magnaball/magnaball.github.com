@@ -2,7 +2,7 @@ import time, datetime
 import pandas as pd
 import numpy as np
 
-pause = 900 # every fifteen minutes
+pause = 120 # every 2 minutes
 
 for i in range(1,96): 
 	data = 'https://docs.google.com/spreadsheets/d/18XyBksNbhgcYfyrNneUCZPINJE1oFjsZ0QnJDCFUd6c/export?format=csv&id=18XyBksNbhgcYfyrNneUCZPINJE1oFjsZ0QnJDCFUd6c&gid=711839241'
