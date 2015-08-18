@@ -3,7 +3,7 @@ from datetime import datetime
 import pandas as pd
 import numpy as np
 
-pause = 120 # every 2 minutes
+pause = 720 # every 12 minutes
 
 for i in range(1,300): 
 	data = 'https://docs.google.com/spreadsheets/d/18XyBksNbhgcYfyrNneUCZPINJE1oFjsZ0QnJDCFUd6c/export?format=csv&id=18XyBksNbhgcYfyrNneUCZPINJE1oFjsZ0QnJDCFUd6c&gid=711839241'
@@ -24,7 +24,7 @@ for i in range(1,300):
 
 	df = df.merge(dfZIP, how='left', on='zip')
 
-	print df.head(10)
+	#print df.head(10)
 
 	df.to_csv('data/magnaball.csv', index=False)
 	df.to_csv('/Users/danielmsheehan/Google Drive/magnaball_gdrive.csv', index=False)
