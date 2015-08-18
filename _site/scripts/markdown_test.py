@@ -13,7 +13,11 @@ text_file = open('/Users/danielmsheehan/GitHub/magnaball.github.com/_posts/2015-
 x = """tickets    98
 dtype: int64"""
 
+x = x.replace('dtype: int64','')
+
 theText = headerInfo +'\n'+ '\n' + x
 
 text_file.write(theText)
 text_file.close()
+
+print theText

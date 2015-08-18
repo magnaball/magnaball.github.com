@@ -6,4 +6,3 @@ categories: jekyll update
 ---
 
 tickets    98
-dtype: int64
