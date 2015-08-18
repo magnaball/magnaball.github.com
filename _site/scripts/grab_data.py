@@ -1,4 +1,5 @@
 import time, datetime
+from datetime import datetime
 import pandas as pd
 import numpy as np
 
@@ -48,5 +49,6 @@ categories: magnaball
 	print theText
 
 	print i
+	print datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
 	time.sleep(pause)

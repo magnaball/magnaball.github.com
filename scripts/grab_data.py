@@ -1,4 +1,5 @@
 import time, datetime
+from datetime import datetime
 import pandas as pd
 import numpy as np
 
@@ -7,15 +8,19 @@ pause = 120 # every 2 minutes
 for i in range(1,96): 
 	data = 'https://docs.google.com/spreadsheets/d/18XyBksNbhgcYfyrNneUCZPINJE1oFjsZ0QnJDCFUd6c/export?format=csv&id=18XyBksNbhgcYfyrNneUCZPINJE1oFjsZ0QnJDCFUd6c&gid=711839241'
 	
-	df = pd.read_csv(data)
+	df = pd.read_csv(data)#, dtype={'zip':object})
 
 	df.columns = ['time', 'tickets','zip']
 
+	#df['zip'] = df.zip.map(str)
+	#df['zip'] = df.zip.str[:5] #FIX THIS IS TEMPORARY FOR CANADIAN ADDRESSES THAT ARE 6 DIGITS
 	df["zip"] = df.zip.map("{:05}".format)
+	df['zip'] = df.zip.map(str).replace('.0','')
 
 	zipLatLngs = '/Users/danielmsheehan/Dropbox/GIS/Data/National/zipcode/zipcode.csv'
 
 	dfZIP = pd.read_csv(zipLatLngs, dtype={'zip':object})
+	print dfZIP.head(40)
 
 	df = df.merge(dfZIP, how='left', on='zip')
 
@@ -48,5 +53,6 @@ categories: magnaball
 	print theText
 
 	print i
+	print datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
 	time.sleep(pause)
