@@ -5,6 +5,6 @@ date:   2015-08-17 19:36:07
 categories: magnaball
 ---
 
-The number of tickets people want is: <strong>222</strong>
+The number of tickets people want is: <strong>258</strong>
 
 Ticket count not updated as frequently as map.
