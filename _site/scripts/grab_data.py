@@ -35,7 +35,7 @@ for i in range(1,96):
 layout: post
 title:  "Magnaball Ticket Need Stats"
 date:   2015-08-17 19:36:07
-categories: jekyll update
+categories: magnaball
 ---"""
 
 	text_file = open('/Users/danielmsheehan/GitHub/magnaball.github.com/_posts/2015-08-17-magnaball-stats.markdown', "w")
