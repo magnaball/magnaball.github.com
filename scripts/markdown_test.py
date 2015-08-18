@@ -8,7 +8,7 @@ categories: jekyll update
 
 
 
-text_file = open('/Users/danielmsheehan/GitHub/magnaball.github.com/_posts/2015-08-17-welcome-to-jekyll.markdown', "w")
+text_file = open('/Users/danielmsheehan/GitHub/magnaball.github.com/_posts/2015-08-17-magnaball-stats.markdown', "w")
 
 x = """tickets    98
 dtype: int64"""
