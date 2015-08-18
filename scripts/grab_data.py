@@ -46,7 +46,9 @@ categories: magnaball
 	text_file = open('/Users/danielmsheehan/GitHub/magnaball.github.com/_posts/2015-08-18-magnaball-stats.markdown', "w")
 	x = x.replace('dtype: int64','').replace('tickets','')
 
-	theText = headerInfo +'\n'+ '\n' + 'The number of tickets people want is: <strong>' + x + '</strong>' + '\n' + '\n' + 'Ticket count not updated as frequently as map.'
+	y = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+
+	theText = headerInfo +'\n'+ '\n' + 'The number of tickets people want is: <strong>' + x + '</strong>' + '\n' + '\n' + 'Ticket count may not updated as frequently as map. Updated as of '+y
 	text_file.write(theText)
 	text_file.close()
 
