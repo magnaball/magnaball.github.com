@@ -5,7 +5,7 @@ import numpy as np
 
 pause = 120 # every 2 minutes
 
-for i in range(1,96): 
+for i in range(1,300): 
 	data = 'https://docs.google.com/spreadsheets/d/18XyBksNbhgcYfyrNneUCZPINJE1oFjsZ0QnJDCFUd6c/export?format=csv&id=18XyBksNbhgcYfyrNneUCZPINJE1oFjsZ0QnJDCFUd6c&gid=711839241'
 	
 	df = pd.read_csv(data)#, dtype={'zip':object})
@@ -20,11 +20,11 @@ for i in range(1,96):
 	zipLatLngs = '/Users/danielmsheehan/Dropbox/GIS/Data/National/zipcode/zipcode.csv'
 
 	dfZIP = pd.read_csv(zipLatLngs, dtype={'zip':object})
-	print dfZIP.head(40)
+	#print dfZIP.head(40)
 
 	df = df.merge(dfZIP, how='left', on='zip')
 
-	print df.head(40)
+	print df.head(10)
 
 	df.to_csv('data/magnaball.csv', index=False)
 	df.to_csv('/Users/danielmsheehan/Google Drive/magnaball_gdrive.csv', index=False)
