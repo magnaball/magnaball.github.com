@@ -31,8 +31,7 @@ for i in range(1,96):
 	
 	x = ''.join(map(str,x))
 
-	headerInfo = """
----
+	headerInfo = """---
 layout: post
 title:  "Magnaball Ticket Need Stats"
 date:   2015-08-17 19:36:07
