@@ -26,3 +26,4 @@ print dfZIP.head(1000)
 print df.head(40)
 
 df.to_csv('data/magnaball.csv', index=False)
+df.to_csv('/Users/danielmsheehan/Google Drive/magnaball_gdrive.csv', index=False)
