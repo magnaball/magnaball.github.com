@@ -7,6 +7,6 @@ categories: magnaball
 
 The number of tickets people want is: <strong>647</strong>
 
-Ticket count may not updated as frequently as map. Updated as of 2015-08-19 23:19:49 EST.
+Ticket count may not updated as frequently as map. Updated as of 2015-08-20 00:07:55 EST.
 
 At $225 a ticket, that would be <strong>$145575</strong> in GA tickets.
